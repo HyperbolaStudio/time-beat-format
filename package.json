@@ -1,0 +1,24 @@
+{
+  "name": "time-beat-format",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HyperbolaStudio/time-beat-format.git"
+  },
+  "keywords": [
+    "format",
+    "time",
+    "beat"
+  ],
+  "author": "Hyperbola Studio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HyperbolaStudio/time-beat-format/issues"
+  },
+  "homepage": "https://github.com/HyperbolaStudio/time-beat-format#readme"
+}
