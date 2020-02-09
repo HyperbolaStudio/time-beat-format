@@ -5,7 +5,7 @@ Formatting time, notes and beats.
 # Get Started
 
 ```bash
-npm install @hyp/time-format
+npm install @hypst/time-beat-format
 ```
 
 The module can work both in Node.js and browsers.
