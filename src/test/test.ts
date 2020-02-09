@@ -3,7 +3,7 @@ let testList = [
     new HMSTime(),
     new HMSTime("5"),
     new HMSTime("10.3"),
-    new HMSTime("10::.49"),//todo
+    new HMSTime("10::.49"),//todo//fixed
     new HMSTime("10:5:367"),
     new HMSTime("10:35"),
     new HMSTime("3:5:21.5"),
