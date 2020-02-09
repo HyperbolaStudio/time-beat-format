@@ -115,10 +115,10 @@ export class HMSTime{
 
 
     toString():string{
-        let hour = fillNumberWidth(this.hour,this._option.numberWidthOption?.hour);
-        let minute = fillNumberWidth(this.minute,this._option.numberWidthOption?.minute);
-        let second = fillNumberWidth(this.second,this._option.numberWidthOption?.second);
-        let millisecond = fixNumberWidth(this.millisecond,this._option.numberWidthOption?.millisecond);
+        let hour = fillNumberWidth(this.hour,this._option?.numberWidthOption?.hour);
+        let minute = fillNumberWidth(this.minute,this._option?.numberWidthOption?.minute);
+        let second = fillNumberWidth(this.second,this._option?.numberWidthOption?.second);
+        let millisecond = fixNumberWidth(this.millisecond,this._option?.numberWidthOption?.millisecond);
         if(hour)hour+=':';
         if(minute)minute+=':';
         if(millisecond)millisecond = '.'+millisecond;
