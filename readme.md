@@ -15,7 +15,7 @@ The module itself includes `d.ts` TypeScript definitions.
 # Usage
 
 ```javascript
-const timeFormat = require('@hyp/time-format');
+const timeFormat = require('@hypst/time-format');
 
 let timeObj1 = new timeFormat.HMSTime('1:5.5');
 console.log(timeObj.toString()); //1:5.500
@@ -73,7 +73,7 @@ For millisecond, the number will be rounded to the specified width when the widt
 
 Example:
 ```javascript
-const {HMSTime} = require('@hyp/time-format');
+const {HMSTime} = require('@hypst/time-format');
 
 let option = {
     numberWidthOption:{
@@ -101,7 +101,7 @@ Time string. Hour, minute, second are separated by colons and second and millise
 Both half-width(`:` `.`) and full-width(`：` `．` `。`) symbols can be recognized.
 
 ```javascript
-const {HMSTime} = require('@hyp/time-format');
+const {HMSTime} = require('@hypst/time-format');
 
 let t1 = new HMSTime('1:1:13.0'); //1:1:13.000
 let t2 = new HMSTime('1:.35'); //0:1:0.350
@@ -114,7 +114,7 @@ let t6 = new HMSTime('1:63.5'); //0:2:3.500
 #### `hour`, `minute`, `second` and `millisecond`
 
 ```javascript
-const {HMSTime} = require('@hyp/time-format');
+const {HMSTime} = require('@hypst/time-format');
 
 let t1 = new HMSTime(69968170); //19:26:8.170
 let t2 = new HMSTime(19,26,8,170); //19:26:8.170
@@ -129,7 +129,7 @@ If no parameter, the time will be initialized to `0:0:0.000`.
 ### `hour`, `minute`, `second` and `millisecond`
 
 ```javascript
-const {HMSTime} = require('@hyp/time-format');
+const {HMSTime} = require('@hypst/time-format');
 
 let t1 = new HMSTime('19:26:8.17');
 console.log(t1.minute); //26
@@ -156,7 +156,7 @@ Convert an `HMSTime` object to string.
 Convert an `HMSTime` object to millisecond.
 
 ```javascript
-const {HMSTime} = require('@hyp/time-format');
+const {HMSTime} = require('@hypst/time-format');
 
 let t1 = new HMSTime(69968170);
 console.log(t1.toMillisecond()); //69968170
@@ -167,7 +167,7 @@ console.log(t1.toMillisecond()); //69968170
 Parameter `time` is an `HMSTime` object.
 
 ```javascript
-const {HMSTime} = require('@hyp/time-format');
+const {HMSTime} = require('@hypst/time-format');
 
 let t1 = new HMSTime('2:8.3');
 t1.increase(new HMSTime('1:17.5'));
@@ -179,7 +179,7 @@ console.log(t1); //0:3:25.800
 Parameter `time` is an `HMSTime`.
 
 ```javascript
-const {HMSTime} = require('@hyp/time-format');
+const {HMSTime} = require('@hypst/time-format');
 
 let t1 = new HMSTime('2:8.3');
 t1.reduce(new HMSTime('1:17.5'));
@@ -193,7 +193,7 @@ It's worth noting that if the result is less than `0`, it will be set to `0:0:0.
 Parameter `time` is an `HMSTime`.
 
 ```javascript
-const {HMSTime} = require('@hyp/time-format');
+const {HMSTime} = require('@hypst/time-format');
 
 let t1 = new HMSTime('2:8.3');
 console.log(t1.offset(new HMSTime('3:25.8'))); //-77750
