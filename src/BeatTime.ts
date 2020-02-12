@@ -90,6 +90,7 @@ export class BeatTime{
         if(division!==undefined){
             this._division = division;
         }
+        this._division = Math.round(this._division);
         this._beat+=Math.floor(this.division/this._option.divisionsPerBeat);
         this._division%=this._option.divisionsPerBeat;
         this._note+=Math.floor(this.beat/this._option.beatsPerNote);
