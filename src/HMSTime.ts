@@ -37,7 +37,7 @@ export class HMSTime{
     protected _minute:number = 0;
     protected _second:number = 0;
     protected _millisecond:number = 0;
-    protected _option:HMSTimeOption = {};
+    readonly _option:HMSTimeOption = {};
     get hour():number{
         return this._hour;
     }

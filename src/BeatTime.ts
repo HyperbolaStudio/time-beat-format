@@ -25,7 +25,7 @@ export class BeatTime{
     }
 
 
-    protected _option:BeatTimeOption;
+    readonly _option:BeatTimeOption;
     protected _note:number = 0;
     protected _beat:number = 0;
     protected _division:number = 0;
@@ -119,7 +119,7 @@ export class BeatTime{
         let msPerNote = this._option.beatsPerNote*60*1000/this._option.bpm;
         let msPerBeat = 60*1000/this._option.bpm;
         let msPerDivision = msPerBeat/this._option.divisionsPerBeat;
-        let millisecond = this.note*msPerNote + this.beat*msPerBeat + this.division*msPerDivision;
+        let millisecond = this._note*msPerNote + this._beat*msPerBeat + this._division*msPerDivision;
         return new HMSTime(millisecond);
     }
 }
